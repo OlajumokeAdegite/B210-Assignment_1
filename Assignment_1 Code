@@ -1,0 +1,22 @@
+# Example data: Replace this list with the ages of your participants
+ages = [25, 30, 35, 40, 45, 50, 55]
+
+# Calculate the median
+median_age = np.median(ages)
+
+# Calculate the range
+range_age = max(ages) - min(ages)
+
+print(f"Median age: {median_age}")
+print(f"Range of ages: {range_age}")
+
+
+# Example data: Replace this list with the smoking statuses of your participants
+smoking_statuses = ['smoker', 'non-smoker', 'smoker', 'non-smoker', 'non-smoker', 'smoker', 'non-smoker']
+
+# Count occurrences of each smoking status
+status_counts = Counter(smoking_statuses)
+
+print("Smoking status counts:")
+for status, count in status_counts.items():
+    print(f"{status}: {count}")
